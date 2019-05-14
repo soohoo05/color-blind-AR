@@ -3,6 +3,7 @@ var colorResult = document.querySelector("#result");
 var feed = document.querySelector(".feed");
 var Canvas = document.querySelector("#Canvas");
 var context = Canvas.getContext("2d");
+var feedDiv = document.querySelector(".feedDiv")
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
@@ -19,7 +20,8 @@ function initFeed() {
         video.srcObject = stream;
       })
       .catch(function(err0r) {
-        console.log(err0r);
+        feedDiv.innerHTML="Sorry, Your Browser doesn't support video feed"
+        feedDiv.style.padding="20px"
       });
   }
 }
