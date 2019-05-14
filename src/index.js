@@ -63,7 +63,7 @@ function rec(recognition, numbers) {
           console.log("error, you shouldn't have got here");
       }
     } else {
-      colorResult.innerHTML = "Result: Didn't recognize the color";
+      colorResult.innerHTML = "Result: Didn't recognize the number";
     }
   };
   recognition.onend = () => {
