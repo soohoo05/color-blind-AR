@@ -32,14 +32,7 @@ function initMic() {
   var SpeechRecognitionEvent =
     SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
   var numbers = ["1", "2", "3"];
-  var grammar =
-    "#JSGF V1.0; grammar colors; public <color> = " +
-    numbers.join(" | ") +
-    " ;";
   var recognition = new SpeechRecognition();
-  var speechRecognitionList = new SpeechGrammarList();
-  speechRecognitionList.addFromString(grammar, 1);
-  recognition.grammars = speechRecognitionList;
   recognition.continuous = true;
   recognition.lang = "en-US";
   recognition.start();
@@ -81,8 +74,8 @@ function rec(recognition, numbers) {
 
 function initCanvas() {
   video.addEventListener("canplay", function() {
-    Canvas.width = video.videoWidth;
     Canvas.height = video.videoHeight;
+    Canvas.width = video.videoWidth;
     video.play();
     drawFrame(video);
   });
@@ -100,13 +93,13 @@ function drawFrame(video) {
 Below functions will manipulate each pixel such that it will simulate the chosen colorblindness
 */
 function redGreen(data) {
-  for (var i = 0; i < data.length; i += 4) {}
+  for (var i = 0; i < data.length; i += 1) {}
 }
 
 function blueYellow(data) {
-  for (var i = 0; i < data.length; i += 4) {}
+  for (var i = 0; i < data.length; i += 1) {}
 }
 
 function complete(data) {
-  for (var i = 0; i < data.length; i += 4) {}
+  for (var i = 0; i < data.length; i += 1) {}
 }
