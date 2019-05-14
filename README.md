@@ -8,6 +8,7 @@ To run:
 1.Clone down the Repo
 
 2.Open up index.html in Google Chrome
+
 Note: Please Run this in Google Chrome, the Web Speech API used is only supported in Google Chrome.
 
 3.Allow Microphone Access and follow the prompt on the top of the page
