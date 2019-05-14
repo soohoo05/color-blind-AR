@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title>Color Blind AR</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <div class="intro">
+            <h1>Color Blind AR</h1>
+            <h4>Say a corresponding number to a type of colorblindness</h4>
+            <p> 1:Red-Green, 2:Blue-Yellow, 3:Complete</p>
+        </div>
+        <div class="feedDiv">
+            <video id="video" autoplay></video>
+            <div class="feed">
+            </div>
+            <canvas id="Canvas" class="video"></canvas>
+        </div>
+        <div class="result">
+            <p id="result">Result:</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
